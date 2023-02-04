@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    background: #E9E9E9;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.toolbar {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    background: #FAFAFA;
+    border-bottom: 1px solid lightgrey;
+}
+
+.section-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.section-container > div {
+    margin: 5px 5px 10px;
+    border-radius: 10px;
+}
+
+.file-section {
+    flex: 1;
+    margin-left: 10px;
+    background: #FAFAFA;
+    border: 1px solid lightgrey;
+}
+
+.editor-output-section {
+    flex: 6;
+    margin-right: 10px;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.editor-output-section > * {
+    border-radius: 10px;
+    background: #FAFAFA;
+    border: 1px solid lightgrey;
+}
+
+.editor-section {
+    flex: 1;
+    margin-right: 5px;
+    outline: none;
+    padding: 10px;
+    resize: horizontal;
+}
+
+.output-section {
+    flex: 1;
+    margin-left: 5px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.output-toolbar {
+    flex: auto;
+    padding: 5px;
+    max-height: 45px;
+    background: #F0F0F0;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 10px 10px 0 0;
+}
+
+.pdf-container {
+    flex: auto;
+}
