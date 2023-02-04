@@ -79,13 +79,17 @@ body {
 
 .output-toolbar {
     flex: auto;
+    min-height: 35px;
+    max-height: 35px;
     padding: 5px;
-    max-height: 45px;
     background: #F0F0F0;
     border-bottom: 1px solid lightgrey;
     border-radius: 10px 10px 0 0;
 }
 
 .pdf-container {
-    flex: auto;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
